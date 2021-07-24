@@ -1,10 +1,9 @@
 from yt_concate.pipeline.steps.step import Step
 
+from yt_concate.settings import CAPTIONS_DIR
 
-# from yt_concate.settings import CAPTIONS_DIR
 
-
-class ReadCation(Step):
+class ReadCaption(Step):
     def process(self, data, inputs, utils):
         for yt in data:
             if not utils.caption_file_exists(yt):

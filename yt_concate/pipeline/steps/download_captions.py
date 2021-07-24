@@ -32,7 +32,7 @@ class DownloadCaptions(Step):
             text_file = open(yt.get_caption_filepath(), "w", encoding='utf-8')
             text_file.write(en_caption_convert_to_srt)
             text_file.close()
-            break
+            # break
         end = time.time()
         print('took ', end - start, 'seconds')
 
